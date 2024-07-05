@@ -5,6 +5,7 @@ import Team from "../components/Team.js";
 import Tech from "../components/Tech.js";
 import Achievments from "../components/Achievements.js";
 import auvimg from "../../src/assets/auvimg.JPG"
+import { useNavigation,Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (<>
@@ -49,6 +50,32 @@ const HeroSection = () => {
     <Team/>
     <Tech/>
     <Achievments/>
+    <footer className="bg-[#0d1117] text-[#c9d1d9] px-4 lg:px-6 py-6 flex flex-col sm:flex-row items-center justify-between">
+        <p className="text-sm">&copy; 2024 ASME IIT Roorkee AUV</p>
+        <nav className="flex gap-4 sm:gap-6 mt-4 sm:mt-0">
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4 text-[#00b5d8]"
+            prefetch={false}
+          >
+            Privacy
+          </Link>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4 text-[#00b5d8]"
+            prefetch={false}
+          >
+            Terms
+          </Link>
+          <Link
+            href="#"
+            className="text-sm font-medium hover:underline underline-offset-4 text-[#00b5d8]"
+            prefetch={false}
+          >
+            Contact
+          </Link>
+        </nav>
+      </footer>
     </>
   );
 };
