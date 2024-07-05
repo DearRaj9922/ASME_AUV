@@ -40,7 +40,7 @@ const HeroSection = () => {
             width="700"
             height="550"
             alt="AUV"
-            className="mx-auto overflow-hidden rounded-xl sm:w-full h-full lg:order-last "
+            className="mx-auto overflow-hidden rounded-xl sm:w-full h-full lg:order-last hover:shadow-lg transform hover:scale-120 transition-transform duration-300 "
           />
         </div>
       </div>
